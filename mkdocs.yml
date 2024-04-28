@@ -1,0 +1,96 @@
+# Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+
+# Project information
+site_name: Online CV
+site_url: https://github.com/fralfaro/online-cv
+site_author: Francisco Alfaro
+site_description:
+
+# Repository
+repo_name: fralfaro/online-cv
+repo_url: https://github.com/fralfaro/online-cv
+edit_uri: ''
+
+# Markdown extensions
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - neoteroi.cards
+  - neoteroi.timeline
+  - neoteroi.projects
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - css/neoteroi-mkdocs.css
+
+# Theme
+theme:
+  name: material
+  language: es
+  logo: images/cv.png
+  favicon: images/cv.png
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: black
+    accent: amber
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: black
+    accent: amber
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+  features:
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - navigation.indexes
+  - content.tooltips
+  - navigation.path
+  - content.code.annotate
+  - content.code.copy
+  - content.code.select
+  - navigation.tabs
+  - navigation.footer
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mkdocs
+    - icon: fontawesome/solid/globe
+      link: https://www.mkdocs.org/
+
+# Plugins
+plugins:
+  - mkdocs-jupyter:
+      kernel_name: python3
+  - search
+
+# Extra javascript
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+#TOC
+nav:
+    - Home: index.md
+    - 👋 Presentation: about_me/me.md
+    - 📚 Education:
+      - 📗 Education: about_me/education.md
+      - 📕 Certifications: about_me/certification.md
+      - 📘 Tech Stack: about_me/stack.md
+    - ⚒️ Experience:
+      - 💻 Work Experience: about_me/work_exp.md
+      - 📖 Teaching Experience: about_me/teaching_exp.md
+    - ⭐ More:
+      - 🏆 Honors & Awards: about_me/awards.md
+      - 🫱🏻‍🫲🏽 Volunteering: about_me/volunteering.md
+
