@@ -17,7 +17,7 @@ hide:
   url: ./about_me/me/
 
 - title: Education
-  content: Education, Certifications, Tech Stack
+  content: Education, Certifications, Stack
   image: images/icons/book.png
   url: ./about_me/education/
 
