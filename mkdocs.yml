@@ -89,7 +89,7 @@ extra_javascript:
 
 #TOC
 nav:
-    - Home: index.md
+    - 🏠 Home: index.md
     - 👋 Presentation: about_me/me.md
     - 📚 Education:
       - 📗 Education: about_me/education.md
